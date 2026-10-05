@@ -93,4 +93,4 @@ The following features were tested successfully:
 
 ## Live Demo
 
-Coming soon.
+https://cash-flow-beta-ten.vercel.app/
