@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash-Flow | Salary & Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cash-Flow</h1>
+        <p>Salary & Expense Tracker</p>
+    </header>
+    <main>
+
+        <!-- Salary  -->
+        <section>
+            <h2>Salary</h2>
+
+            <form id="salary-form">
+                <label for="salary">Total Salary</label>
+                <input type="number" id="salary" placeholder="Enter your salary" min="0" required>
+                <p id="salary-error" class="error"></p>
+                <button type="submit">Set Salary</button>
+            </form>
+        </section>
+
+        <!-- Expense -->
+        <section>
+            <h2>Add Expense</h2>
+
+            <form id="expense-form">
+                <label for="expense-name">Expense Name</label>
+                <input type="text" id="expense-name" placeholder="e.g. Food" required>
+                <p id="name-error" class="error"></p>
+
+                <label for="expense-amount">Expense Amount</label>
+                <input type="number" id="expense-amount" placeholder="Enter amount" min="0" required>
+                <p id="expense-error" class="error"></p>
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <!-- Summary -->
+        <section>
+            <h2>Financial Summary</h2>
+            <p>Total Salary: ₹<span id="salary-display">0</span></p>
+            <p>Total Expenses: ₹<span id="expense-display">0</span></p>
+            <p>Remaining Balance: ₹<span id="balance-display">0</span></p>
+            <p id="balance-alert"></p>
+        </section>
+
+        <!-- Expense List -->
+        <section>
+            <h2>Expense List</h2>
+            <ul id="expense-list"></ul>
+        </section>
+
+        <!-- Chart -->
+        <section>
+            <h2>Expense Overview</h2>
+            <canvas id="expense-chart"></canvas>
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

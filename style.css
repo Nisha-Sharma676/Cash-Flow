@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f6f8;
+}
+
+header {
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+}
+
+section {
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+input,
+button {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+#expense-list li {
+    margin: 10px 0;
+}
+
+#expense-chart {
+    width: 300px !important;
+    height: 300px !important;
+    display: block;
+    margin: 0 auto;
+}
+.error {
+    color: red;
+    font-size: 14px;
+    margin: 4px 0;
+}
